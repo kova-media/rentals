@@ -7,7 +7,6 @@ export const metadata: Metadata = {
     template: "%s | Rentals"
   },
   description: "Local rental listings and property management for renters and property owners in northeast Kansas.",
-  metadataBase: new URL("https://rentals.vercel.app"),
   openGraph: {
     title: "Rentals | Northeast Kansas",
     description: "Find a rental or get help managing your property.",
