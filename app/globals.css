@@ -241,3 +241,38 @@ footer {
 .button-outline { border: 1px solid #232323; background: #fff; color: #232323; }
 .button-light-danger { border: 1px solid #ded0cc; background: #f8efec; color: #7a3324; }
 @media (max-width: 720px) { .dashboard-stats { grid-template-columns: 1fr; } .dashboard-title, .application-detail-head { align-items: flex-start; flex-direction: column; } .form-grid { grid-template-columns: 1fr; } .application-row { grid-template-columns: 1fr; gap: 10px; } .application-date { order: 3; } }
+
+.renter-hero { padding: 96px 0 82px; border-bottom: 1px solid #dddcd7; }
+.renter-hero h1 { max-width: 760px; margin: 0; font-size: clamp(52px, 7vw, 82px); line-height: .95; letter-spacing: -.065em; }
+.renter-search { margin-top: 34px; display: grid; grid-template-columns: 1.5fr .9fr auto; gap: 10px; max-width: 840px; }
+.renter-search input, .renter-search select { height: 52px; border: 1px solid #cbc9c3; border-radius: 8px; padding: 0 15px; background: #fff; }
+.renter-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
+.renter-filters { display: grid; grid-template-columns: 1.5fr 1fr 1fr auto; gap: 10px; margin-bottom: 28px; }
+.renter-filters input, .renter-filters select { min-width: 0; height: 48px; border: 1px solid #cbc9c3; border-radius: 8px; padding: 0 14px; background: #fff; }
+.trust-section { padding: 82px 0; border-top: 1px solid #dddcd7; background: #ebe9e3; }
+.trust-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 80px; align-items: start; }
+.trust-grid p { color: #5f5d58; line-height: 1.6; margin: 0; }
+.rental-detail-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: start; }
+.detail-photo { overflow: hidden; border-radius: 12px; background: #e9e8e3; }
+.detail-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+.detail-copy { padding-top: 8px; }
+.detail-location { margin: 12px 0 0; color: #73716b; font-size: 16px; }
+.detail-price { margin-top: 28px; font-size: 34px; font-weight: 700; letter-spacing: -.04em; }
+.detail-price span { margin-left: 6px; font-size: 14px; font-weight: 400; color: #76746e; }
+.detail-specs { margin-top: 9px; color: #5d5b56; font-size: 14px; }
+.detail-description { margin: 26px 0 0; color: #5f5d58; line-height: 1.65; max-width: 560px; }
+.application-cta { margin-top: 28px; padding: 22px; border: 1px solid #dfded9; border-radius: 10px; background: #fff; }
+.application-cta p { margin: 10px 0 16px; color: #66645f; line-height: 1.5; font-size: 14px; }
+.application-provider-card { max-width: 700px; margin-top: 30px; }
+.provider-heading { display: flex; justify-content: space-between; gap: 20px; align-items: center; }
+.provider-heading span { color: #77756f; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
+.provider-heading strong { font-size: 18px; }
+.application-disclaimer { margin-top: 14px; color: #77756f; font-size: 12px; }
+.success-shell { max-width: 700px; }
+.success-copy { max-width: 610px; margin: 20px 0 28px; color: #5f5d58; font-size: 18px; line-height: 1.55; }
+.success-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.button-outline { border: 1px solid #222; background: #fff; color: #222; }
+@media (max-width: 850px) {
+  .renter-search, .renter-filters, .rental-detail-grid, .trust-grid { grid-template-columns: 1fr; }
+  .renter-toolbar { align-items: flex-start; flex-direction: column; }
+}
