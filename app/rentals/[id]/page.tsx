@@ -23,7 +23,7 @@ export default async function RentalDetailPage({ params }: Props) {
           <nav>
             <Link href="/rentals">Browse</Link>
             <Link href="/renter">My applications</Link>
-            <Link className="button button-dark button-small" href="/landlord">Landlords</Link>
+            <Link className="button button-dark button-small" href="/property-management">For owners</Link>
           </nav>
         </div>
       </header>
@@ -57,10 +57,13 @@ export default async function RentalDetailPage({ params }: Props) {
               </div>
               <div className="application-cta">
                 <div>
-                  <strong>Ready to apply?</strong>
-                  <p>Apply through the secure application process. The landlord's contact information is not published on the listing.</p>
+                  <strong>Interested in this property?</strong>
+                  <p>Send a quick inquiry before starting a full application. Your interest is associated with this property so the next step can be handled through the managed process.</p>
                 </div>
-                <Link href={"/apply/" + listing.id} className="button button-dark">Apply for this rental</Link>
+                <div className="detail-actions">
+                  <Link href={"/rentals/" + listing.id + "/interest"} className="button button-dark">I'm interested</Link>
+                  <Link href={"/apply/" + listing.id} className="button button-outline">Start application</Link>
+                </div>
               </div>
             </section>
           </div>
