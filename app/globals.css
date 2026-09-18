@@ -201,3 +201,43 @@ footer {
 .account-form label { display: grid; gap: 8px; font-size: 13px; font-weight: 700; }
 .account-form input { height: 48px; border: 1px solid #cbc9c3; border-radius: 8px; padding: 0 14px; background: #fff; outline: none; }
 .account-form .button { justify-self: start; margin-top: 6px; }
+
+.dashboard-header { border-bottom: 1px solid #dddcd7; background: #fff; }
+.dashboard-header-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; }
+.dashboard-user { display: flex; align-items: center; gap: 20px; font-size: 14px; color: #66645f; }
+.dashboard { padding: 58px 0 90px; }
+.dashboard-title { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.dashboard-stats { margin: 38px 0 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.dashboard-stats > div { padding: 20px; border: 1px solid #dfded9; border-radius: 10px; background: #fff; }
+.dashboard-stats span { display: block; color: #77756f; font-size: 13px; }
+.dashboard-stats strong { display: block; margin-top: 10px; font-size: 30px; letter-spacing: -.04em; }
+.dashboard-section { margin-top: 20px; }
+.application-list { overflow: hidden; border: 1px solid #dfded9; border-radius: 10px; background: #fff; }
+.application-row { display: grid; grid-template-columns: 1.6fr .7fr auto auto; align-items: center; gap: 20px; padding: 18px 20px; border-bottom: 1px solid #ebeae6; }
+.application-row:last-child { border-bottom: 0; }
+.application-main { display: grid; gap: 5px; }
+.application-main span, .application-date { color: #77756f; font-size: 13px; }
+.status { display: inline-flex; justify-content: center; align-items: center; padding: 7px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; background: #ecebe7; }
+.status-new { background: #e8efe8; }
+.status-review { background: #eeeae2; }
+.status-approved { background: #e5eee8; }
+.row-arrow { font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+.form-shell-wide { max-width: 880px; }
+.listing-form { display: grid; gap: 34px; margin-top: 38px; }
+.form-section { padding: 26px 0; border-top: 1px solid #dddcd7; }
+.form-section h2 { margin-bottom: 10px; font-size: 24px; }
+.form-section > p { color: #77756f; font-size: 14px; line-height: 1.5; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.form-grid label { display: grid; gap: 8px; font-size: 13px; font-weight: 700; }
+.form-grid input, .form-grid select, .listing-form textarea { width: 100%; border: 1px solid #cbc9c3; border-radius: 8px; min-height: 48px; padding: 0 14px; background: #fff; }
+.listing-form textarea { padding: 14px; resize: vertical; }
+.upload-box { min-height: 150px; border: 1px dashed #bdbbb5; border-radius: 10px; background: #fafaf8; display: flex; align-items: center; justify-content: center; color: #77756f; font-size: 14px; }
+.back-link { display: inline-block; margin-bottom: 32px; font-size: 13px; color: #62605b; }
+.application-detail-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-bottom: 28px; border-bottom: 1px solid #dddcd7; }
+.application-detail-head p { margin: 12px 0 0; color: #66645f; }
+.application-notice, .decision-panel, .application-provider-card { margin-top: 24px; padding: 24px; border: 1px solid #dfded9; border-radius: 10px; background: #fff; }
+.application-notice p, .decision-panel p, .application-provider-card p { color: #66645f; line-height: 1.55; }
+.decision-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.button-outline { border: 1px solid #232323; background: #fff; color: #232323; }
+.button-light-danger { border: 1px solid #ded0cc; background: #f8efec; color: #7a3324; }
+@media (max-width: 720px) { .dashboard-stats { grid-template-columns: 1fr; } .dashboard-title, .application-detail-head { align-items: flex-start; flex-direction: column; } .form-grid { grid-template-columns: 1fr; } .application-row { grid-template-columns: 1fr; gap: 10px; } .application-date { order: 3; } }
