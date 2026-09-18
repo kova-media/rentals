@@ -16,7 +16,7 @@ export default function RentalsPage() {
       </header>
       <section className="browse-section">
         <div className="container">
-          <div className="section-header">
+          <div className="renter-toolbar">
             <div><p className="eyebrow">Find a place</p><h1 className="page-title">Available rentals</h1></div>
             <span className="results-count">{listings.length} listings</span>
           </div>
@@ -24,22 +24,17 @@ export default function RentalsPage() {
             <input name="location" placeholder="City or ZIP code" aria-label="City or ZIP code" />
             <select name="propertyType" defaultValue="">
               <option value="">Property type</option>
-              <option>House</option>
-              <option>Apartment</option>
-              <option>Townhouse</option>
-              <option>Condo</option>
+              <option>House</option><option>Apartment</option><option>Townhouse</option><option>Condo</option>
             </select>
             <select name="beds" defaultValue="">
               <option value="">Bedrooms</option>
-              <option value="1">1+</option>
-              <option value="2">2+</option>
-              <option value="3">3+</option>
+              <option value="1">1+</option><option value="2">2+</option><option value="3">3+</option>
             </select>
             <button className="button button-dark" type="submit">Filter</button>
           </form>
           <div className="listing-grid">
             {listings.map((listing) => (
-              <Link className="listing-card" href={'/rentals/' + listing.id} key={listing.id}>
+              <Link className="listing-card" href={"/rentals/" + listing.id} key={listing.id}>
                 <div className="listing-image"><img src={listing.photoUrls[0]} alt={listing.title} /></div>
                 <div className="listing-content">
                   <div className="price">{'$' + listing.rent.toLocaleString()}<span>/month</span></div>
